@@ -28,6 +28,13 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <!-- 排除springboot原有的log依赖 -->
+            <!--<exclusions>-->
+                <!--<exclusion>-->
+                    <!--<groupId>org.springframework.boot</groupId>-->
+                    <!--<artifactId>spring-boot-starter-logging</artifactId>-->
+                <!--</exclusion>-->
+            <!--</exclusions>-->
         </dependency>
         <!--spring 热部署-->
         <dependency>
@@ -60,7 +67,8 @@
             <artifactId>shiro-spring</artifactId>
             <version>1.4.1</version>
         </dependency>
-        <!-- log4j2 -->
+        <!-- log配置 -->
+        <!-- 添加log4j2依赖 -->
         <!--<dependency>-->
             <!--<groupId>org.springframework.boot</groupId>-->
             <!--<artifactId>spring-boot-starter-log4j2</artifactId>-->
